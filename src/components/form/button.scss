@@ -1,0 +1,77 @@
+@import "../../color.scss";
+
+.viui-button.viui-button  {
+	& .-button {
+		border: 2px solid rgba($primary-fg, 0.1);
+		background-color: rgba($primary-fg, 0.03);
+		will-change: background-color, border-color;
+		box-sizing: border-box;
+		height: 40px;
+		border-radius: 20px;
+		width: 100%;
+		line-height: 36px;
+		padding: 0 22px;
+		font-size: 16px;
+		font-weight: bold;
+		color: $primary-fg;
+		display: block;
+		vertical-align: bottom;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		text-align: center;
+		appearance: none;
+		transition: background-color 150ms linear, border-color 150ms linear, box-shadow 150ms linear, transform 150ms linear;
+		// transform: translateY(0);
+		box-shadow: $elevation-0;
+	}
+	& .-button:active {
+		box-shadow: $elevation-1-inset;
+	}
+}
+// focus 
+.x .viui-button.viui-button {
+	& .-button:focus, & .-button:active, & .-button:hover {
+		box-shadow: $elevation-1;
+		border-color: rgba($primary-fg, 0.2);
+	}
+}
+.viui-button.viui-button {
+	& .-button:active, & .-button:active.-button:hover {
+		box-shadow: $elevation-1-inset;
+	}
+}
+// enabled - disabled 
+.viui-button.viui-button {
+	&.-enabled {
+		& .-button {
+			cursor: pointer;
+		}
+	}
+	&.-disabled {
+		opacity: 0.5;
+		& .-button {
+			cursor: default;
+			background-color: transparent;
+			box-shadow: none !important;
+			border-color: rgba(0,0,0,0.05) !important;
+		}
+	}
+}
+// loading
+.viui-button.viui-button {
+	&.-loading {
+		opacity: 1;
+		& .-button {
+			color: rgba(0,0,0,0) !important;
+		}
+	}
+	& img.-loader {
+		$size: 24px;
+		margin: 0 auto;
+		left: calc(50% - (#{$size / 2}));
+		top: calc(50% - (#{$size / 2}));
+		height: $size;
+		position: absolute;
+	}
+
+}

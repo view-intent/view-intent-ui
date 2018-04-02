@@ -1,0 +1,13 @@
+.viui-icon {
+	box-sizing: content-box !important;
+	display: block !important;
+	flex-shrink: 0 !important;
+	flex-grow: 0 !important;
+	& > svg {
+		width: 100%;
+		height: 100%;
+		max-width: 100%;
+		max-height: 100%;
+		display: block !important;
+	}
+}

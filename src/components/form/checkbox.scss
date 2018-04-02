@@ -1,0 +1,169 @@
+@import "../../color.scss";
+
+.viui-checkbox.viui-field {
+	& > .viui-field__checkbox {
+		$padding-left: 20px;
+		& > .-left-children, & > .-right-children {
+			display: flex;
+			vertical-align: middle;
+			align-content: center;
+			align-items: center;
+			flex-direction: row;
+			& > .-button {
+				padding: 0;
+				margin: 0 8px;
+				width: 24px;
+				height: 24px;
+				display: block;
+				border-radius: 12px;
+				padding: 2px;
+				box-sizing: content-box;
+				background-color: transparent;
+				background-clip: content-box;
+				border: 2px solid rgba($primary-fg, 0.1);
+				fill: $primary-accent-fg;
+				background-color: rgba($primary-fg, 0.03);
+				transition: background-color 200ms linear;
+				will-change: background-color;
+				& .viui-icon {
+					margin: 0 auto;
+				}
+			}
+		}
+		& > .-children {
+			display: flex;
+			vertical-align: middle;
+			align-content: center;
+			align-items: center;
+			flex-direction: row;
+			& > .-label {
+				display: block;
+				width: 100%;
+				line-height: 20px;
+				font-size: 16px;
+				padding: 4px 6px;
+				margin: 0;
+			}
+		}
+	}
+	// focus and filled
+	&.-checked  > .viui-field__checkbox {
+		& > .-left-children, & > .-right-children {
+			& > .-button {
+				border-color: rgba($primary-fg, 0.1);
+				background-color: $primary-accent-bg;
+				fill: $primary-accent-fg;
+			}
+		}
+	}
+	// focus and filled
+	&.-focus  > .viui-field__checkbox {
+		& > .-left-children, & > .-right-children {
+			& > .-button {
+				border-color: rgba($primary-fg, 0.2);
+			}
+		}
+	}
+
+	// focus and filled
+	&.-focus  > .viui-field__input,
+	&.-filled > .viui-field__input {
+		& > .-children {
+			& > .-input {
+	
+			}
+			& > .-label {
+				transform: translateY(-14px) scale(0.9);
+				opacity: 0.2;
+			}
+		}
+	}
+
+	// labeled
+	&.-labeled.-focus  > .viui-field__input,
+	&.-labeled.-filled > .viui-field__input {
+		& > .-children {
+			& > .-input {
+				padding-top: 22px;
+				padding-bottom: 6px;
+			}
+		}
+	}
+}
+
+
+.x .viui-checkbox.viui-field {
+	& .-button:hover {
+		border-color: rgba($primary-fg, 0.2);
+	}
+}
+
+// switch -------------------
+.viui-checkbox.-switch {
+	& > .viui-field__checkbox {
+		& > .-left-children, & > .-right-children {
+			& > .-button {
+				background-color: rgba($primary-fg, 0.03);
+				width: 40px;
+				border-radius: 16px;
+				text-align: right;
+				position: relative;
+
+				& > .-slider {
+					position: absolute;
+					top: 2px;
+					right: 2px;
+					width: 24px;
+					height: 24px;
+					background-color: $primary-bg;
+					display: block;
+					border-radius: 100%;	
+					box-sizing: border-box;
+					transform: translateX(-16px);
+					box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.3);
+					transition: transform 100ms ease-out;
+					will-change: transform;
+				}
+			}
+		}
+	}
+	&.-checked {
+		& > .viui-field__checkbox {
+			& > .-left-children, & > .-right-children {
+				& > .-button {
+					& > .-slider {
+						transform: translateX(0);
+					}
+				}
+			}
+		}
+	}
+}
+// radio
+.viui-checkbox.-radio {
+	&.-radio {
+		& > .viui-field__checkbox {
+			& > .-left-children, & > .-right-children {
+				& > .-button {
+					border-radius: 100%;
+				}
+			}
+		}
+	}
+	&.-checked {
+		& > .viui-field__checkbox {
+			& > .-left-children, & > .-right-children {
+				& > .-button {
+					& > .-dot {
+						height: 12px;
+						width: 12px;
+						border-radius: 100%;
+						margin: auto;
+						display: block;
+						background-color: $primary-fg;
+					}
+				}
+			}
+		}
+	}
+}

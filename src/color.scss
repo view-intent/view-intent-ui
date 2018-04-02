@@ -1,0 +1,38 @@
+// backgrounds e foregrounds
+// primary - será a cor que é predominante (ex.: fundo body)
+$primary-bg: #FAFAFA !default;
+$primary-fg: #263238 !default;
+// primary-accent - cor de alto contraste para elementos dentro do primary
+$primary-accent-bg: #FFCA28 !default;
+$primary-accent-fg: #000 !default;
+// secondary - será aquela que é minoria (ex.: topo)
+$secondary-bg: #CFD8DC !default;
+$secondary-fg: #263238 !default;
+// secondary accent - cor de alto contraste para elementos dentro do secondary
+$secondary-accent-bg: #B71C1C !default;
+$secondary-accent-fg: #FFFFFF !default;
+
+// info colors - deve possui bom contraste com primary e secondary backgrounds
+// info
+$info-bg: #0a85b9 !default;
+$info-fg: #FFF !default;
+// sucesss
+$success-bg: #9CCC65 !default;
+$success-fg: #FFF !default;
+// warning
+$warning-bg: #FFEB3B !default;
+$warning-fg: #263238 !default;
+// danger or error
+$danger-bg: #d32f2f !default;
+$danger-fg: #FFF !default;
+
+// elevation
+$elevation-0: 0px 0px 0px -1px rgba(0,0,0,0.2)  !default;
+$elevation-0-inset: 0px 0px 0px -1px rgba(0,0,0,0.2) inset !default;
+//-1
+$elevation-1: 0px 1px 2px -1px rgba(0,0,0,0.2), 0px 2px 10px -2px rgba(0,0,0,0.02),  0px 0px 8px 0px rgba(0,0,0,0.05) !default;
+$elevation-1-inset: 1px 1px 2px -1px rgba(0,0,0,0.2) inset, 2px 2px 10px -2px rgba(0,0,0,0.02) inset,  0px 0px 8px 0px rgba(0,0,0,0.05) inset !default;
+//-2
+$elevation-2: 0px 1px 2px -1px rgba(0,0,0,0.2), 0px 2px 10px -2px rgba(0,0,0,0.02) !default;
+$elevation-2-inset: 1px 1px 2px -1px rgba(0,0,0,0.2) inset, 2px 2px 10px -2px rgba(0,0,0,0.02) inset !default;
+

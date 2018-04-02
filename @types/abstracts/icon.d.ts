@@ -15,4 +15,23 @@ export declare namespace IconAbstract {
     interface IState {
     }
 }
-export default IconAbstract;
+export declare class Icon extends React.Component<Icon.IProps, Icon.IState> {
+    state: Icon.IState;
+    constructor(props: Icon.IProps);
+    render(): JSX.Element;
+}
+export declare namespace Icon {
+    function rootStyle(width: string, height?: string): any;
+    interface IProps {
+        src: typeof IconAbstract;
+        width?: string;
+        height?: string;
+    }
+    interface IState {
+    }
+}
+declare const _default: {
+    Icon: typeof Icon;
+    IconAbstract: typeof IconAbstract;
+};
+export default _default;

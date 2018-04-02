@@ -1,0 +1,22 @@
+.viui-field {
+	&.viui-field {
+		// background-color: #0FF;
+		padding: 8px 8px;
+		margin: 0;
+		position: relative;
+	}
+	&__input, &__checkbox {
+		flex-direction: row;
+		display: flex;
+		flex-wrap: nowrap;
+		position: relative;
+		& > .-children {
+			flex-grow: 1;
+			flex-shrink: 1;
+		}
+		& > input, & > select {
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
