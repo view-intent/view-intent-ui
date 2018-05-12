@@ -23,14 +23,16 @@
 		}
 		& > .viui-field:first-child {
 			& .-button {
-				border-right-width: 2px;
-				border-radius: 20px 0 0 20px;
+				border-left-width: 2px;
+				border-top-left-radius: 20px;
+				border-bottom-left-radius: 20px;
 			}
 		}
 		& > .viui-field:last-child {
 			& .-button {
 				border-right-width: 2px;
-				border-radius: 0 20px 20px 0;
+				border-top-right-radius: 20px; 
+				border-bottom-right-radius: 20px;
 			}
 		}
 	}
@@ -45,13 +47,15 @@
 		& > .viui-field:first-child {
 			& .-button {
 				border-top-width: 2px;
-				border-radius: 20px 20px 0 0;
+				border-top-left-radius: 20px;
+				border-top-right-radius: 20px;
 			}
 		}
 		& > .viui-field:last-child {
 			& .-button {
 				border-bottom-width: 2px;
-				border-radius: 0 0 20px 20px;
+				border-bottom-left-radius: 20px; 
+				border-bottom-right-radius: 20px;
 			}
 		}
 	}
@@ -68,14 +72,18 @@
 		}
 		& > .viui-field:first-child {
 			& .viui-field__input {
-				border-right-width: 2px;
-				border-radius: 24px 0 0 24px;
+				border-left-width: 2px;
+				border-top-left-radius: 24px;
+				border-bottom-left-radius: 24px;
+				// border-radius: 24px 0 0 24px;
 			}
 		}
 		& > .viui-field:last-child {
 			& .viui-field__input {
 				border-right-width: 2px;
-				border-radius: 0 24px 24px 0;
+				border-top-right-radius: 24px;
+				border-bottom-right-radius: 24px;
+				// border-radius: 0 24px 24px 0;
 			}
 		}
 	}

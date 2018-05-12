@@ -10,6 +10,7 @@ export { Selectbox } from "./components/form/selectbox";
 export { Group } from "./components/form/group";
 export { IConfigOptions } from "./components/config/options";
 import { IConfigOptions } from "./components/config/options";
+export declare const classnames: (...classes: string[]) => string;
 export declare namespace ViewIntentUI {
     function config(options: IConfigOptions): void;
 }

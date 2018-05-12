@@ -3,7 +3,8 @@
 .viui-button.viui-button  {
 	& .-button {
 		border: 2px solid rgba($primary-fg, 0.1);
-		background-color: rgba($primary-fg, 0.03);
+		// background-color: rgba($primary-fg, 0.03);
+		background-color: transparent;
 		will-change: background-color, border-color;
 		box-sizing: border-box;
 		height: 40px;

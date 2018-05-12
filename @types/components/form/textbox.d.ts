@@ -9,6 +9,7 @@ export declare class Textbox extends React.Component<Textbox.IProps, Textbox.ISt
     constructor(props: Textbox.IProps);
     value: string | number | null | undefined;
     isValid(): boolean;
+    readonly isFocus: boolean;
     loading(): void;
     loaded(): void;
     inputChange(): Promise<void>;

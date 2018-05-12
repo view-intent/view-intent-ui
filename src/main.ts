@@ -14,10 +14,12 @@ export { Group } from "./components/form/group";
 // ---
 export { IConfigOptions } from "./components/config/options";
 import { Options, IConfigOptions } from "./components/config/options";
-
+// external libraries
+import * as classnamesImport from "classnames";
+export const classnames: (...classes: string[]) => string = classnamesImport;
 export namespace ViewIntentUI {
-	export function config(options: IConfigOptions): void {
-		Options.set(options);
-	}
+  export function config(options: IConfigOptions): void {
+    Options.set(options);
+  }
 }
 export default ViewIntentUI;

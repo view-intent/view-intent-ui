@@ -2,6 +2,7 @@ import * as React from "react";
 import { ILoadableComponent } from "../interfaces/loadable";
 export declare class Button extends React.Component<Button.IProps, Button.IState> implements ILoadableComponent {
     state: Button.IState;
+    buttonRef: any;
     constructor(props: Button.IProps);
     readonly value: string | number | null | undefined;
     isLabeled(): boolean;

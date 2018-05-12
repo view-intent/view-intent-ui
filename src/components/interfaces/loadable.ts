@@ -1,4 +1,4 @@
 export interface ILoadableComponent {
-	loading(): void;
-	loaded(): void;
+  loading(): void;
+  loaded(): void;
 }
